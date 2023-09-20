@@ -1,0 +1,98 @@
+//fbauht
+// --- LoginScreen.js ---
+//   // Firebase Auth
+// import {getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword} from 'firebase/auth'
+// import {initializeApp} from 'firebase/app'
+// import {firebaseConfig} from '../firebaseconfig'
+
+// ------------
+//     // Inicializar Firebase
+//     const app = initializeApp(firebaseConfig);
+//     const auth = getAuth(app)
+
+//     // Método crear cuenta
+//     const handleCreateAccount = () => {
+//         createUserWithEmailAndPassword(auth,email,password)
+//         .then((userCredential)=>{
+//             setMessage('Cuenta creada exitosamente ...');
+//             const user = userCredential.user // guardar credenciales del usuario para posterior uso
+//             console.log(user) // mostrar credenciales por consola
+//         })
+//         .catch(error =>{
+//             //console.log(error)
+//             //setMessage(error.message)
+//             setMessage(error.message)
+            
+//         })
+//     }
+
+//     // Método signIn
+//     const handleSignIn = ()=>{
+//         signInWithEmailAndPassword(auth,email,password)
+//         .then((userCredential)=>{
+//             setMessage('Inicio de sesión exitoso ...');
+//             const user = userCredential.user // guardar credenciales del usuario para posterior uso
+//             console.log(user) // mostrar credenciales por consola
+//         })
+//         .catch(error =>{
+//             console.log(error.message)
+//             setMessage(error.message)
+//             setMessage("Correo y/o contraseña inválidos....");
+            
+//         })
+//     }
+
+
+/////////////////////////////////////////////////////////////////////
+Login 
+
+
+// --- LoginScreen.js ---
+
+// export default function LoginScreen() {
+//     const [email, setEmmail] = useState("");
+//     const [password, setPassword] = useState("");
+//     const [message, setMessage] = useState('');
+
+//     return (
+//         <View style={styles.container}>
+//             <Avatar.Image
+//                 style={{ marginBottom: 20 }}
+//                 size={100}
+//                 source={require('../assets/imgs/imglogin.png')} />
+//             <View style={{ borderWidth: 2, borderColor: 'gray', borderRadius: 10, padding: 50 }}>
+//                 <TextInput
+//                     autoFocus
+//                     label="Correo Electrónico"
+//                     left={<TextInput.Icon icon="email" />}
+//                     onChangeText={(email) => setEmmail(email)}
+//                     value={email}
+//                 />
+//                 <TextInput
+//                     style={{ marginTop: 20 }}
+//                     label="Contraseña"
+//                     secureTextEntry={!showPass}
+//                     onChangeText={(password) => setPassword(password)}
+//                     value={password}
+//                 />
+//                 <Button
+//                     style={{ marginTop: 20, backgroundColor: 'orange' }}
+//                     icon="login"
+//                     mode="outlined"
+//                     onPress={handleSignIn}
+//                 >
+//                     Iniciar Sesión
+//                 </Button>
+//                 <Button
+//                     style={{ marginTop: 20, backgroundColor: 'yellow' }}
+//                     icon="account"
+//                     mode="outlined"
+//                     onPress={handleCreateAccount}
+//                 >
+//                     Crear Cuenta
+//                 </Button>
+//                 <Text style={{color:'green'}}>{message}</Text>
+//             </View>
+//         </View>
+//     )
+// }
